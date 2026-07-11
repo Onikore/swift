@@ -1,0 +1,16 @@
+{
+  "project": "swift",
+  "platform": "ios",
+  "github": {
+    "owner": "Onikore",
+    "repo": "swift"
+  },
+  "ios": {
+    "path": "projects"
+  },
+  "flutter": {
+    "watch": {}
+  },
+  "reactNative": {},
+  "mobai": {}
+}
