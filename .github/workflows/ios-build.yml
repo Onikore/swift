@@ -112,6 +112,16 @@ jobs:
           restore-keys: |
             pods-${{ runner.os }}-
 
+      - name: Generate Xcode project (XcodeGen)
+        env:
+          IOS_PATH: ${{ inputs.ios_path }}
+        run: |
+          set -e
+          if [ -f "$IOS_PATH/project.yml" ]; then
+            brew install xcodegen
+            (cd "$IOS_PATH" && xcodegen generate)
+          fi
+
       - name: Install certificate and provisioning profile
         if: inputs.use_signing
         env:

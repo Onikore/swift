@@ -6,7 +6,7 @@
     "repo": "swift"
   },
   "ios": {
-    "path": "projects"
+    "path": "projects/HelloBuilder"
   },
   "flutter": {
     "watch": {}
